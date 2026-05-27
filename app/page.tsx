@@ -2,64 +2,123 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+
+    <div>
+      <div className="flex items-center w-auto h-auto">
+        <div>
+          <div className="bg-[#FFFFFF] p-2.5 rounded-xl text-base font-metropolis font-medium text-[#FF6652] w-fit">
+            <h1>Never Stop Learning</h1>
+          </div>
+
+          <div>
+            <h1 className="text-5xl font-bold py-5">
+              Grow up your skills by online courses with Eduvi
+            </h1>
+          </div>
+
+          <div>
+            <h1 className="text-[14px] font-extralight text-[#5D5A6F]">
+              Eduvi is a Global training provider based across the UK that specialises in accredited and bespoke training courses. We crush the barriers togetting a degree.
+            </h1>
+          </div>
+
+        <div className="pt-8">
+          <div className="flex items-center bg-white rounded-xl p-2 pl-4 shadow-sm border border-gray-100 h-[60px] w-full">
+            {/* Left Section: Category Dropdown */}
+            <div className="flex items-center gap-2 pr-4 cursor-pointer select-none">
+              <span className="text-gray-500 font-medium text-sm md:text-base">
+                Kindergarten
+              </span>
+              {/* Chevron Down Arrow */}
+              <svg
+                className="w-4 h-4 text-purple-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2.5"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+
+            {/* Divider Line */}
+            <div className="h-6 w-px bg-gray-200" />
+
+            {/* Middle Section: Main Text Input */}
+            <div className="flex-1 px-4">
+              <input
+                type="text"
+                placeholder="Class/Course"
+                className="w-full bg-transparent text-gray-700 placeholder-gray-400 font-medium text-sm md:text-base focus:outline-none"
+              />
+            </div>
+
+            {/* Right Section: Action Button */}
+            <button className="flex items-center justify-center gap-2 bg-[#9333EA] hover:bg-[#7e22ce] text-white font-medium px-6 h-full rounded-lg transition-colors duration-200 shadow-sm cursor-pointer">
+              {/* Search Glass Icon */}
+              <svg
+                className="w-5 h-5 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2.5"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              <span className="hidden sm:inline">Search</span>
+            </button>
+          </div>
+        </div>
+
+        </div>
+        <div>
+          <Image
+            src="/icons/school-boy-holding-a-book.svg"
+            alt="school boy holding a book"
+            width={830}
+            height={850}
+          />
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center justify-center pt-10">
+
+        <div className="flex flex-col text-[35px] font-bold text-center">
+          <h1>High quality video, audio</h1>
+          <h1>& live classes</h1>
+        </div>
+
+        <div className="flex text-center pt-5 px-10 text-[#5D5A6F]" >
+          <h1>
+            High-definition video is video of higher resolution and quality than standard-definition. While there is no standardized meaning for high-definition, generally any video image with considerably more than 480 vertical scan lines or 576 vertical lines is considered high-definition.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+
+        <div className="pt-5">
+            <button className="flex items-center justify-center gap-2 bg-[#9333EA] hover:bg-[#7e22ce] text-white font-medium px-6 h-full rounded-lg transition-colors duration-200 shadow-sm cursor-pointer p-4">
+            Visit Courses
+          </button>
+        </div>
+
+        <div className="pt-10">
+          <div className="p-5 bg-white rounded-2xl">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="icons/pexels-vanessa.svg"
+              alt="teacher"
+              width={1500}
+              height={800}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
