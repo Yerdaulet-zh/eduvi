@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 export default function Navbar() {
     return (
         <nav className="flex flex-row items-center justify-between py-5 z-50 bg-[#F7F5FA]">
