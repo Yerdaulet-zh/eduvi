@@ -1,17 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
     return (
         <nav className="flex flex-row items-center justify-between py-5 z-50 bg-[#F7F5FA]">
-            <div className="relative h-8 w-35 sm:h-9 sm:w-45 md:h-10 md:w-60 lg:h-10 lg:w-60">
-                <Image
-                    src="https://pub-51f3f731af484f6bb32052dee9595dd9.r2.dev/test/brand/logo.svg"
-                    alt="logo with the name of eduvi"
-                    fill
-                    className="object-contain"
-                    loading="eager"
-                />
-            </div>
+            <Link href="/">
+                <div className="relative h-8 w-35 sm:h-9 sm:w-45 md:h-10 md:w-60 lg:h-10 lg:w-60">
+                    <Image
+                        src="https://pub-51f3f731af484f6bb32052dee9595dd9.r2.dev/test/brand/logo.svg"
+                        alt="logo with the name of eduvi"
+                        fill
+                        className="object-contain object-left"
+                        loading="eager"
+                    />
+                </div>
+            </Link>
             <div>
                 <div className="flex flex-row gap-2 sm:gap-2.5 md:gap-5 text-[0.9rem] sm:text-base font-metropolis font-medium">
                     <div className="flex flex-row items-center gap-0.5 sm:gap-1.5 md:gap-2 lg:gap-2.5">
