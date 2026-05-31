@@ -21,7 +21,7 @@ export const Button: React.FC<ButtonProps> = ({
     // Defined styles for each variant
     const variants: Record<ButtonVariant, string> = {
         primary: 'bg-[#9C4DF4] text-white hover:bg-[#8B3CE3]',
-        secondary: 'text-[#9C4DF4] hover:text-[#8c25ff] border-2 border-[#9C4DF4] hover:border-[#8c25ff]',
+        secondary: 'text-[#9C4DF4] hover:text-[#8c25ff] inset-ring-2 inset-ring-[#9C4DF4] hover:border-[#8c25ff]',
         highlight: 'bg-[#FF6652] text-white font-semibold hover:bg-[#ff553f] drop-shadow-md',
         'no-style': 'bg-transparent p-0 m-0 border-none text-current hover:opacity-100',
     };
