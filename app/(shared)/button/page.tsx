@@ -4,9 +4,9 @@ import { Button } from "@/components/button/button";
 
 export default function ButtonPage() {
   return (
-    <div className="text-center">
+    <div>
         <h1 className="text-2xl font-bold mb-4">Button Components</h1>
-        <div className="inline-grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 justify-items-center gap-5">
             <div>
                 <Button variant="primary" size="lg">
                     Primary Button

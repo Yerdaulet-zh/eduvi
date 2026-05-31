@@ -16,7 +16,7 @@ export const Button: React.FC<ButtonProps> = ({
     className = '',
     ...props
 }) => {
-    const baseStyles = 'inline-flex items-center justify-center font-medium transition-colors duration-200 disabled:opacity-50 disabled:pointer-events-none rounded-[10px]';
+    const baseStyles = 'font-medium transition-colors duration-200 disabled:opacity-50 disabled:pointer-events-none rounded-[10px]';
 
     // Defined styles for each variant
     const variants: Record<ButtonVariant, string> = {
