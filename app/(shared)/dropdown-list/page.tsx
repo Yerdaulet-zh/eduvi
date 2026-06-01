@@ -31,7 +31,7 @@ export default function TestPage() {
                 <Button onClick={toggleDropdown} variant="secondary">
                     Toggle Dropdown
                 </Button>
-                <div className={`${isOpen ? 'absolute' : 'invisible'} mt-2 w-48 rounded-md bg-white shadow-lg ring-1 ring-black/5`}>
+                <div className={`${isOpen ? 'absolute' : 'hidden'} mt-2 w-48 rounded-md bg-white shadow-lg ring-1 ring-black/5`}>
                     <div className="py-1">
                         <Link href="#" onClick={toggleDropdown} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 1</Link>
                         <Link href="#" onClick={toggleDropdown} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 2</Link>
